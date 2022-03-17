@@ -8,6 +8,11 @@ use Illuminate\Database\Eloquent\Model;
 class Belanja extends Model
 {
     protected $table = 'belanja';
-    use HasFactory;
-}
- 
+    use HasFactory;   
+     protected $fillable = [
+        'user_id',
+        'produk_id',
+        'total_harga',
+        'status'
+    ];
+} 

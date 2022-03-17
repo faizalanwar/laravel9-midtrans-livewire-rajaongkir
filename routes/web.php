@@ -2,6 +2,7 @@
 
 use App\Http\Livewire\AddProduct;
 use App\Http\Livewire\Home;
+use App\Http\Livewire\Cart;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
@@ -29,3 +30,5 @@ Auth::routes();
 
 Route::get('/', Home::class);
 Route::get('/addproduct', AddProduct::class);
+
+Route::get('/cart', Cart::class);
