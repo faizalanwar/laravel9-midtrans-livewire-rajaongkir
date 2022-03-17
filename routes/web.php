@@ -1,5 +1,8 @@
 <?php
 
+use App\Http\Livewire\AddProduct;
+use App\Http\Livewire\Home;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,10 +16,16 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('welcome');
+// });
 
 Auth::routes();
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+// Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+// Route::get('/', [Home::class,'Home']);
+
+
+Route::get('/', Home::class);
+Route::get('/addproduct', AddProduct::class);
