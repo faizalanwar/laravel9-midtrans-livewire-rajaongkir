@@ -42,7 +42,7 @@
 
                                 <td>
                                     @if ($pesanan->status == 0)
-                                        <a href="{{ url('TambahOngkir/' . $pesanan->id) }}"
+                                        <a href="{{ url('addongkir/' . $pesanan->id) }}"
                                             class="btn btn-warning btn-block">Tambahkan Ongkir</a>
                                     @endif
                                     @if ($pesanan->status == 1)

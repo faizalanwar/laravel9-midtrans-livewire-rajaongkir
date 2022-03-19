@@ -39,7 +39,7 @@
                             <img src="{{ asset('storage/upload/' . $product->gambar) }}" style="object-fit:cover"   width="200px" height="270px">
                             <div class="row mt-2">
                                 <div class="col-md-12">
-                                    <h5><strong>{{ $product->nama }}</strong></h5>
+                                    <h5><strong>{{ $product->nama }}</strong><small> - {{ $product->berat }} gram</small></h5> 
                                     <h6><strong>Rp. {{ number_format($product->harga) }}</strong></h6>
                                 </div>
                             </div>

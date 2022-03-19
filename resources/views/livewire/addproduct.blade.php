@@ -25,7 +25,7 @@
                     @enderror
 
 
-                    <label for="berat" class="col-md-12 col-form-label text-md-left">{{ 'Berat Produk' }}</label>
+                    <label for="berat" class="col-md-12 col-form-label text-md-left">{{ 'Berat Produk (gram)' }}</label>
                     <input id="berat" type="number" class="form-control @error('berat') is-invalid @enderror"
                         wire:model="berat" value="{{ old('berat') }}" required autocomplete="berat" autofocus>
                     @error('berat')

@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Livewire\AddOngkir;
 use App\Http\Livewire\AddProduct;
 use App\Http\Livewire\Home;
 use App\Http\Livewire\Cart;
@@ -30,5 +31,6 @@ Auth::routes();
 
 Route::get('/', Home::class);
 Route::get('/addproduct', AddProduct::class);
+Route::get('/addongkir/{id}', AddOngkir::class);//cek id provinsi
 
 Route::get('/cart', Cart::class);
